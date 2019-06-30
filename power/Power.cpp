@@ -31,7 +31,6 @@ namespace power {
 namespace V1_1 {
 namespace implementation {
 
-using ::android::hardware::power::V1_0::Feature;
 using ::android::hardware::power::V1_0::PowerHint;
 using ::android::hardware::power::V1_0::PowerStatePlatformSleepState;
 using ::android::hardware::power::V1_0::Status;
@@ -80,13 +79,6 @@ Return<void> Power::getSubsystemLowPowerStats(getSubsystemLowPowerStats_cb _hidl
     return Void();
 }
 
-Return<int32_t> Power::getFeature(LineageFeature feature)  {
-    if (feature == LineageFeature::SUPPORTED_PROFILES) {
-        return get_number_of_profiles();
-    }
-    return -1;
-}
-
 status_t Power::registerAsSystemService() {
     status_t ret = 0;
 
@@ -96,14 +88,6 @@ status_t Power::registerAsSystemService() {
         goto fail;
     } else {
         ALOGI("Successfully registered IPower");
-    }
-
-    ret = ILineagePower::registerAsService();
-    if (ret != 0) {
-        ALOGE("Failed to register ILineagePower (%d)", ret);
-        goto fail;
-    } else {
-        ALOGI("Successfully registered ILineagePower");
     }
 
 fail:

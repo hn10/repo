@@ -231,3 +231,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the common proprietary files
 -include vendor/xiaomi/msm8937-common/BoardConfigVendor.mk
+
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
