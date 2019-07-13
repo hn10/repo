@@ -209,6 +209,10 @@ BOARD_USES_QCOM_HARDWARE := true
 DISABLE_RILD_OEM_HOOK := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_RIL_VARIANT := caf
+TARGET_USES_OLD_MNC_FORMAT := true
+
+# Telephony
+TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB 		 := $(VENDOR_PATH)/rootdir/fstab.qcom
@@ -232,4 +236,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # Inherit the common proprietary files
 -include vendor/xiaomi/msm8937-common/BoardConfigVendor.mk
 
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
