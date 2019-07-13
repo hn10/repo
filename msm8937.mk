@@ -130,6 +130,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0_vendor \
     Snap
 
+# chimera-lite prebuilt apks
+PRODUCT_PACKAGES += \
+   KA-prebuilt \
+   spectrum-prebuilt
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
@@ -239,7 +244,9 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qcom.sh \
     init.target.rc \
-    fstab.qcom
+    fstab.qcom \
+    init.spectrum.rc \
+    init.spectrum.sh
 
 # Keymaster
 PRODUCT_PACKAGES += \

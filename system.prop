@@ -55,7 +55,7 @@ persist.vendor.cne.feature=1
 
 # Display
 ro.opengles.version=196610
-ro.sf.lcd_density=320
+ro.sf.lcd_density=270
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=0
 debug.sf.latch_unsignaled=1
@@ -173,4 +173,20 @@ ril.ecclist=000,08,100,101,102,110,112,118,119,120,122,911,999
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 
+# Misc
 persist.sys.wfd.virtual=0
+ro.xtended.version=FirstBlood 
+ro.xtended.display.version=
+
+# Battery Tweaks
+pm.sleep_mode=1 ro.ril.disable.power.collapse=1 
+wifi.supplicant_scan_interval=180 
+ro.config.hw_fast_dormancy=1 
+ro.config.hw_quickpoweron=true 
+persist.sys.shutdown.mode=hibernate 
+ro.config.hw_power_saving=true 
+ro.max.fling_velocity=20000 ro.min.fling_velocity=18000 
+debug.performance.tuning=1 debug.kill_allocating_task=0 
+debug.overlayui.enable=1 hw3d.force=1 hw2d.force=1 
+persist.sys.ui.hw=! ro.debuggable=1
+ro.config.disable.hw_accel=false
