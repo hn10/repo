@@ -130,7 +130,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0_vendor \
     Snap
 
-# chimera-lite prebuilt apks
+# Chimera prebuilt apks
 PRODUCT_PACKAGES += \
    KA-prebuilt \
    spectrum-prebuilt

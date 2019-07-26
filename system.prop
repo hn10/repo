@@ -175,8 +175,6 @@ telephony.lteOnCdmaDevice=1
 
 # Misc
 persist.sys.wfd.virtual=0
-ro.xtended.version=FirstBlood 
-ro.xtended.display.version=
 
 # Battery Tweaks
 pm.sleep_mode=1 ro.ril.disable.power.collapse=1 
