@@ -10,7 +10,7 @@ on property:sys.boot_completed=1
    # Enable Spectrum support
    setprop spectrum.support 1
 
-   setprop persist.spectrum.kernel Chimera
+   setprop persist.spectrum.kernel FPer⚡
 
 # Balance (default profile)
 on property:persist.spectrum.profile=0

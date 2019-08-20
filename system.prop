@@ -174,17 +174,25 @@ ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 
 # Misc
+ro.havoc.maintainer=Saksham Singh
 persist.sys.wfd.virtual=0
 
 # Battery Tweaks
-pm.sleep_mode=1 ro.ril.disable.power.collapse=1 
+pm.sleep_mode=1 
+ro.ril.disable.power.collapse=1 
 wifi.supplicant_scan_interval=180 
 ro.config.hw_fast_dormancy=1 
 ro.config.hw_quickpoweron=true 
 persist.sys.shutdown.mode=hibernate 
 ro.config.hw_power_saving=true 
-ro.max.fling_velocity=20000 ro.min.fling_velocity=18000 
-debug.performance.tuning=1 debug.kill_allocating_task=0 
-debug.overlayui.enable=1 hw3d.force=1 hw2d.force=1 
-persist.sys.ui.hw=! ro.debuggable=1
+ro.max.fling_velocity=20000 
+ro.min.fling_velocity=18000 
+debug.performance.tuning=1
+debug.kill_allocating_task=0 
+debug.overlayui.enable=1 
+hw3d.force=1 
+hw2d.force=1 
+persist.sys.ui.hw=! 
+ro.debuggable=1
 ro.config.disable.hw_accel=false
+
