@@ -45,4 +45,3 @@ BOARD_SEPOLICY_DIRS += \
 # Inherit the proprietary files
 -include vendor/xiaomi/land/BoardConfigVendor.mk
 
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
