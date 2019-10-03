@@ -132,7 +132,6 @@ PRODUCT_PACKAGES += \
 
 # Chimera prebuilt apks
 PRODUCT_PACKAGES += \
-   KA-prebuilt \
    spectrum-prebuilt
 
 # Configstore

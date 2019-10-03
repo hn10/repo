@@ -1,2 +1,5 @@
 allow system_server radio_prop:property_service set;
 allow system_server wcnss_filter:unix_stream_socket connectto;
+
+#Smart charger
+allow system_server sysfs_battery_supply:file rw_file_perms;
