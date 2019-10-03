@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2018 TheHavocOS Project
+# Copyright (C) 2017-2018 AEX Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,8 +20,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common Havoc stuff
-$(call inherit-product, vendor/havoc/config/common.mk)
+# Inherit some common AEX stuff
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -30,7 +30,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 3S
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := havoc_land
+PRODUCT_NAME := aosp_land
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -41,8 +41,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := Xiaomi/land/land:6.0.1/MMB29M/V9.6.1.0.MALMIFD:user/release-keys
 
-# Official
-HAVOC_BUILD_TYPE := Official
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 720
 
-# Maintainer Prop
-ro.havoc.maintainer=Saksham Singh
+# AospExtended-BuildType
+EXTENDED_BUILD_TYPE := OFFICIAL
